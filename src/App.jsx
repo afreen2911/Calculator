@@ -50,6 +50,16 @@ const App = () => {
       <div className="mb-4 flex items-center justify-between">
         <h2 className="text-xl font-semibold">Calculator</h2>
 
+<input
+  type="text"
+  value={expression}
+  onChange={handleInput}
+  placeholder="0"
+  className={`mb-4 w-full rounded border p-3 text-right text-xl
+    ${isDark ? "bg-gray-700 text-white" : "bg-white"}
+  `}
+/>
+
         <button
           onClick={() => setIsDark(!isDark)}
           className={`w-12 h-6 rounded-full p-1 flex items-center
